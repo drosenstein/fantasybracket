@@ -19,7 +19,7 @@ class TeamListPane extends React.Component {
   render() {
     return (
       <div>
-        { this.props.teams.map( ( team, index ) => ( <TeamPane onClick={ () => { this.props.onTeamClicked( team );  }} team={team} key={index} selected={ this.props.selected === team.name } />) ) }
+        { this.props.teams.map( ( team, index ) => ( <TeamPane onClick={ () => { this.props.onTeamClicked( team );  }} team={team} key={index} selected={ this.props.selected.name === team.name } />) ) }
       </div>
     );
   }

@@ -7,7 +7,11 @@ import BracketPaneComponent from 'components/BracketPaneComponent';
 import * as reducers from './reducers/bracketReducer';
 
 
-
+/**
+ * Teams to be used for test data - culled from ECAC Hockey tournament
+ *
+ * @type {Array}
+ */
 const ecac = [
       {
         'name': 'Clarkson',
@@ -67,6 +71,9 @@ var initialState = {
   'selected': ''
 };
 
+//
+// Create the redux store
+//
 const store = createStore( reducers.bracketReducer, initialState );
 
 
